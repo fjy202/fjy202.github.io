@@ -2,9 +2,23 @@
 <html>
     <head>
         <title>开始使用</title>
+        <link rel="stylesheet" href="./styles/idea.css">
     </head>
     <body>
-        <pre name="code"><code class="python">import aaa</code></pre>
-        <script src="http://www.javaeye.com/javascripts/syntaxhighlighter/shCoreCommon.js?1238329845" type="text/javascript"></script>
+        <code class="hljs">
+            <span class="hljs-keyword">import</span> ClassHTTPServer
+            <p></p>
+            <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">app</span>:</span>
+            <p></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello</span><span class="hljs-params">(self,word,aq=<span class="hljs-string">""</span>)</span>:</span>
+                <p></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-keyword">return</span> <span class="hljs-string">"hello "</span>+word+str(aq)
+            <p></p>
+            application=ClassHTTPServer.app(app)
+            <p></p>
+            <span class="hljs-keyword">if</span> __name__==<span class="hljs-string">"__main__"</span>:
+            <p></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;application.run(<span class="hljs-string">"127.0.0.1"</span>,<span class="hljs-number">8080</span>)
+        </div>
     </body>
 </html>
