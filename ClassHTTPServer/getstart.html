@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>开始使用</title>
-        <link rel="stylesheet" href="./styles/idea.css">
-    </head>
-    <body>
-        <code class="hljs">
-            <span class="hljs-keyword">import</span> ClassHTTPServer
-            <p></p>
-            <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">app</span>:</span>
-            <p></p>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello</span><span class="hljs-params">(self,word,aq=<span class="hljs-string">""</span>)</span>:</span>
-                <p></p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-keyword">return</span> <span class="hljs-string">"hello "</span>+word+str(aq)
-            <p></p>
-            application=ClassHTTPServer.app(app)
-            <p></p>
-            <span class="hljs-keyword">if</span> __name__==<span class="hljs-string">"__main__"</span>:
-            <p></p>
-            &nbsp;&nbsp;&nbsp;&nbsp;application.run(<span class="hljs-string">"127.0.0.1"</span>,<span class="hljs-number">8080</span>)
-        </div>
-    </body>
+
+<head>
+    <title>开始使用</title>
+    <link rel="stylesheet" href="./styles/vs2015.css">
+</head>
+
+<body>
+    先引入ClassHTTPServer：
+    <code class="hljs">
+        <span class="hljs-keyword">import</span> ClassHTTPServer<span class="hljs-comment">#引入ClassHTTPServer</span>
+    </code>
+    定义一个类：
+    <code class="hljs">
+        <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">app</span>:</span>
+    </code>
+    定义一个方法，方法的第一个参数为request，其他参数从PATH_INFO中取值，关键词参数从QUERY_STRING中取：
+    <code class="hljs">
+        <p></p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-function"><span class="hljs-keyword">def</span> <span
+                class="hljs-title">hello</span><span class="hljs-params">(request,word,kwarg=<span
+                    class="hljs-string">""</span>)</span>:</span>
+    </code>
+    
+</body>
+
 </html>
